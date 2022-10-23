@@ -9,19 +9,20 @@
       </SpNavbar>
 
       <router-view />
+      <SpFooter/>
     </SpTheme>
   </div>
 </template>
 
 <script lang="ts">
-import { SpNavbar, SpTheme } from "./starportvue";
+import { SpNavbar, SpTheme, SpFooter } from "./starportvue";
 import SpDarkThemeButton from "./components/SpDarkThemeButton";
 import { computed, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
 import { useStore } from "vuex";
 
 export default {
-  components: { SpTheme, SpNavbar, SpDarkThemeButton },
+  components: { SpTheme, SpNavbar, SpDarkThemeButton, SpFooter },
 
   setup() {
     // store
